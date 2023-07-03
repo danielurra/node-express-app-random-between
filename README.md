@@ -32,7 +32,7 @@ module.exports = (n) => {
   return randomNumber;
 };
 ```
-## nginx reverse proxy
+## Web server Nginx reverse proxy
 Our VPS server is a **Ubuntu 22.04** running `nginx` as a web server and also as a **reverse proxy**.<br>
 ```bash
 server {
