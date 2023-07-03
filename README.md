@@ -79,4 +79,7 @@ server {
     return 404; # managed by Certbot
 }
 ```
+## Animated GIF
+![node-express-app-random-num](https://github.com/danielurra/node-express-app-random-between/assets/51704179/b77d713e-cc84-4579-8b90-e525ac0d48c4)
+
 
