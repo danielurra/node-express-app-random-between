@@ -33,7 +33,7 @@ module.exports = (n) => {
 };
 ```
 ## Web server Nginx reverse proxy
-Our VPS server is a **Ubuntu 22.04** running `nginx` as a web server and also as a **reverse proxy**.<br>
+Our VPS server is a **Ubuntu 22.10** running `nginx` as a web server and also as a **reverse proxy**.<br>
 ```bash
 server {
         root /var/www/nest.comprones.com;
