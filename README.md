@@ -34,6 +34,24 @@ module.exports = (n) => {
   return randomNumber;
 };
 ```
+## package.json
+```javascript
+{
+  "name": "nest.comprones.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+```
 ## Web server Nginx reverse proxy
 Our VPS server is a **Ubuntu 22.10** running `nginx` as a web server and also as a **reverse proxy**.<br>
 ```bash
