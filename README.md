@@ -12,7 +12,7 @@ npm init --yes
 npm install express
 touch server.js random.js
 ```
-## Copy the following code inside server.js 
+## server.js 
 ```javascript
 const express = require("express");
 const app = express();
@@ -27,7 +27,7 @@ app.listen(3044, () => {
  console.log("Server listening on port 3044");
 });
 ```
-## Copy the following code inside random.js 
+## random.js 
 ```javascript
 module.exports = (n) => {
   const randomNumber = Math.floor(Math.random() * n) + 1;
