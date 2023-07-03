@@ -32,3 +32,51 @@ module.exports = (n) => {
   return randomNumber;
 };
 ```
+## nginx reverse proxy
+Our VPS server is a **Ubuntu 22.04** running `nginx` as a web server and also as a **reverse proxy**.<br>
+```bash
+server {
+        root /var/www/nest.comprones.com;
+        index index.html index.js;
+        server_name nest.comprones.com www.nest.comprones.com;
+        location / {
+     try_files $uri @nodejs;
+     #try_files $uri $uri/ =404;
+        }
+# The try_files directive takes a list of files and a location as the last argument.
+# the @ modifier, defines a named location block
+# try_files directive’s last option is an internal redirect to the specified location in this case to Node.js reverse proxy
+
+location @nodejs { 
+ proxy_pass http://localhost:3044;
+ proxy_http_version 1.1;
+ proxy_set_header Upgrade $http_upgrade;
+ proxy_set_header Connection 'upgrade';
+ proxy_set_header Host $host;
+ proxy_cache_bypass $http_upgrade;
+}
+
+listen 443 ssl; # managed by Certbot
+ssl_certificate /etc/letsencrypt/live/comprones.com/fullchain.pem; # managed by Certbot
+ssl_certificate_key /etc/letsencrypt/live/comprones.com/privkey.pem; # managed by Certbot
+include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+server {
+    if ($host = www.nest.comprones.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    if ($host = nest.comprones.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+        listen 80;
+        server_name nest.comprones.com www.nest.comprones.com;
+    return 404; # managed by Certbot
+}
+```
+
