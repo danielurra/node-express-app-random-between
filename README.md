@@ -172,7 +172,7 @@ The HTML document contains an **\<h1\>** element that displays the text "Random 
 * Template Literals :
 We use template literals (enclosed in backticks \`) to construct the HTML string. This allows us to embed variables like `${number}` and `${randomNumber}` directly into the string.<br>
 * HTML Structure :
-The HTML structure includes a `\<!DOCTYPE html\>` declaration, `\<html\>`, `\<head\>`, and `\<body\>` tags for proper formatting.<br>
-The `\<h1\>` tag contains the desired text and the random number.<br>
+The HTML structure includes a `<!DOCTYPE html>` declaration, `<html>`, `<head>`, and `<body>` tags for proper formatting.<br>
+The `<h1>` tag contains the desired text and the random number.<br>
 
 
