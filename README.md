@@ -34,7 +34,7 @@ app.listen(3044, () => {
 });
 ```
 ### Setting Up a Route
-* `app.get("/:number", ...)`: This sets up a route for handling GET requests. The :number part is a route parameter, meaning that whatever value is passed after the / in the URL will be captured as number.
+* `app.get("/:number", ...)`: This sets up a route for handling GET requests. The `:number` part is a route parameter, meaning that whatever value is passed after the / in the URL will be captured as number.
 For example, if you visit http://localhost:3044/10, the number parameter will be "10".
 * Inside the callback function:
 `req.params.number`: This retrieves the value of the number parameter from the URL.
