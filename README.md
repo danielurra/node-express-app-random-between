@@ -110,8 +110,11 @@ server {
 }
 ```
 ## Run the server App
-Finally, run the node server with **node server.js**<br>
-Output:<br>
+Finally, run the node server with the following command:<br>
+```javascript
+node server.js
+```
+`Output`:<br>
 "Server listening on port 3044"<br>
 ## Animated GIF
 ![node-express-app-random-num](https://github.com/danielurra/node-express-app-random-between/assets/51704179/b77d713e-cc84-4579-8b90-e525ac0d48c4)
