@@ -32,7 +32,7 @@ app.listen(3044, () => {
 });
 ```
 ## random.js 
-This part of the code exports a function that generates a random number between 1 and n (inclusive).<br>
+This part of the code **exports a function** that generates a random number between 1 and n (inclusive).<br>
 * `Math.random()`: Generates a random floating-point number between 0 (inclusive) and 1 (exclusive).<br>
 * `Math.random() * n`: Scales the random number to be between 0 and n.<br>
 * `Math.floor(...)`: Rounds the number down to the nearest integer.<br>
