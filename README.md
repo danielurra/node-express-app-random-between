@@ -129,9 +129,10 @@ node server.js
 ## Animated GIF
 ![node-express-app-random-num](https://github.com/danielurra/node-express-app-random-between/assets/51704179/b77d713e-cc84-4579-8b90-e525ac0d48c4)<br>
 ## Updated code
-This modification makes the server respond with an HTML page instead of plain text. The random number is displayed inside an <h1> tag along<br>
-with the descriptive text "Random number between 1 and n (inclusive):".<br>
+This modification makes the server respond with an HTML page instead of plain text.<br>
+The random number is displayed inside an <h1> tag along with the descriptive text "Random number between 1 and n (inclusive):".<br>
 This way, when users visit the URL, they see a nicely formatted webpage with the random number displayed prominently.<br>
+
 ```javascript
 const express = require("express");
 const app = express();
