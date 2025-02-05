@@ -9,7 +9,7 @@ When a user visits a URL like `http://localhost:3044/<some-number>`, the server 
 The random number generation logic is encapsulated in the random function, which is **imported** from a separate file `(./random)`.<br>
 
 ## Initialize and install dependencies
-* `express`: This is a popular Node.js framework used to create web servers and handle HTTP requests.
+* `express`: This is a popular **Node.js** framework used to create web servers and handle HTTP requests.
 * `app`: The app variable is an **instance** of the Express application.
 * `random`: This line imports a function from a **local file** named random.js.
 ```javascript
