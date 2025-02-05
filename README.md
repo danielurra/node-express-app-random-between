@@ -128,6 +128,7 @@ node server.js
 "Server listening on port 3044"<br>
 ## Animated GIF
 ![node-express-app-random-num](https://github.com/danielurra/node-express-app-random-between/assets/51704179/b77d713e-cc84-4579-8b90-e525ac0d48c4)<br>
+
 ## Updated code
 This modification makes the server respond with an HTML page instead of plain text.<br>
 The random number is displayed inside an <h1> tag along with the descriptive text "Random number between 1 and n (inclusive):".<br>
@@ -166,12 +167,12 @@ app.listen(3044, () => {
 ```
 ### Explanation of Changes
 * HTML Response :
-Instead of sending just the random number as plain text, we now send a full HTML document.
-The HTML document contains an <h1> element that displays the text "Random number between 1 and n (inclusive):" followed by the generated random number.
+Instead of sending just the random number as plain text, we now send a full HTML document.<br>
+The HTML document contains an <h1> element that displays the text "Random number between 1 and n (inclusive):" followed by the generated random number.<br>
 * Template Literals :
-We use template literals (enclosed in backticks `) to construct the HTML string. This allows us to embed variables like ${number} and ${randomNumber} directly into the string.
+We use template literals (enclosed in backticks `) to construct the HTML string. This allows us to embed variables like ${number} and ${randomNumber} directly into the string.<br>
 * HTML Structure :
-The HTML structure includes a <!DOCTYPE html> declaration, <html>, <head>, and <body> tags for proper formatting.
-The <h1> tag contains the desired text and the random number.
+The HTML structure includes a <!DOCTYPE html> declaration, <html>, <head>, and <body> tags for proper formatting.<br>
+The <h1> tag contains the desired text and the random number.<br>
 
 
