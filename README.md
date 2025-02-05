@@ -4,7 +4,9 @@
 ## Node.js, express, random-between App
 Node, express app, random number between 0 and your input, a number specifed in the route.<br> 
 For example, http://localhost:3044/10 should return a random number between 1 and 10.<br>
-![curl-random-echo](https://github.com/danielurra/node-express-app-random-between/assets/51704179/d21924c5-b4a6-462f-8739-1fe30f8f2181)
+![curl-random-echo](https://github.com/danielurra/node-express-app-random-between/assets/51704179/d21924c5-b4a6-462f-8739-1fe30f8f2181)<br>
+When a user visits a URL like **http://localhost:3044/<some-number>**, the server generates a random number between 1 and `<some-number>` and sends it back as the response.<br>
+The random number generation logic is encapsulated in the random function, which is imported from a separate file (./random).<br>
 
 ## Initialize and install dependencies
 
