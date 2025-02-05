@@ -127,6 +127,38 @@ node server.js
 `Output`:<br>
 "Server listening on port 3044"<br>
 ## Animated GIF
-![node-express-app-random-num](https://github.com/danielurra/node-express-app-random-between/assets/51704179/b77d713e-cc84-4579-8b90-e525ac0d48c4)
+![node-express-app-random-num](https://github.com/danielurra/node-express-app-random-between/assets/51704179/b77d713e-cc84-4579-8b90-e525ac0d48c4)<br>
+## Updated code
+```javascript
+const express = require("express");
+const app = express();
+const random = require("./random");
+
+app.get("/:number", (req, res) => {
+  const number = req.params.number;
+  
+  // Generate the random number using the imported 'random' function
+  const randomNumber = random(number);
+  
+  // Create an HTML response with the random number in an <h1> tag
+  res.send(`
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Random Number Generator</title>
+    </head>
+    <body>
+      <h1>Random number between 1 and ${number} (inclusive): ${randomNumber}</h1>
+    </body>
+    </html>
+  `);
+});
+
+app.listen(3044, () => {
+  console.log("Server listening on port 3044");
+});
+```
 
 
