@@ -33,6 +33,13 @@ app.listen(3044, () => {
  console.log("Server listening on port 3044");
 });
 ```
+### Setting Up a Route
+`app.get("/:number", ...)`: This sets up a route for handling GET requests. The :number part is a route parameter, meaning that whatever value is passed after the / in the URL will be captured as number.
+For example, if you visit http://localhost:3044/10, the number parameter will be "10".
+Inside the callback function:
+req.params.number: This retrieves the value of the number parameter from the URL.
+random(number): Calls the imported random function with the number as an argument. We'll explain the random function shortly.
+res.send(...): Sends the result of random(number) back to the client as a response. The .toString() converts the number to a string before sending it
 ## random.js 
 This part of the code **exports a function** that generates a random number between 1 and n (inclusive).<br>
 * `Math.random()`: Generates a random floating-point number between 0 (inclusive) and 1 (exclusive).<br>
