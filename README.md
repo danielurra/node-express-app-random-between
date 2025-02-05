@@ -63,6 +63,7 @@ module.exports = (n) => {
 ```
 ## Web server Nginx reverse proxy
 Our VPS server is a **Ubuntu 22.10** running `nginx` as a web server and also as a **reverse proxy**.<br>
+The SSL Certificates are provided by Let's Encrypt and installed using the **certbot** CLI tool.
 ```bash
 server {
         root /var/www/nest.comprones.com;
