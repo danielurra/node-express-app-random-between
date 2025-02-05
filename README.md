@@ -16,6 +16,7 @@ npm install express
 touch server.js random.js
 ```
 ## server.js 
+The server listens on **port 3044** for incoming `HTTP GET requests`.
 ```javascript
 const express = require("express");
 const app = express();
