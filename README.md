@@ -11,7 +11,7 @@ The random number generation logic is encapsulated in the random function, which
 ## Initialize and install dependencies
 * `express`: This is a popular Node.js framework used to create web servers and handle HTTP requests.
 * `app`: The app variable is an **instance** of the Express application.
-* `random`: This line imports a function from a local file named random.js.
+* `random`: This line imports a function from a **local file** named random.js.
 ```javascript
 npm init --yes
 npm install express
