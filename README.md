@@ -5,6 +5,7 @@
 * [Project initialization](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#initialize-and-install-dependencies)<br>
 * [Server code](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#serverjs)<br>
   - [explanation](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#setting-up-a-route)<br>
+* [Export function](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#randomjs)<br>
 # Set up a simple Express server that listens on port 3044.
 ## Node.js, express, random-between App
 Node, express app, random number between 0 and your input, a number specifed in the route.<br> 
