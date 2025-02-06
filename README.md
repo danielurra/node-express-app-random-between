@@ -138,6 +138,25 @@ They also provide features like automatic restarts, logging, and monitoring.<br>
   ```bash
   npm install -g pm2
   ```
+* Start your app with PM2 (let's say it is "server.js"):
+  ```bash
+  pm2 start server.js
+  ```
+* Keep PM2 running on reboot :
+  To ensure your app starts automatically when the server reboots, run:
+  ```bash
+  pm2 startup
+  ```
+* Install PM2 globally :
+  ```bash
+  npm install -g pm2
+  ```
+* Install PM2 globally :
+  ```bash
+  npm install -g pm2
+  ```
+
+
 ## Updated code
 This modification makes the server respond with an HTML page instead of plain text.<br>
 The random number is displayed inside an **\<h1\>** tag along with the descriptive text "Random number between 1 and n (inclusive):".<br>
