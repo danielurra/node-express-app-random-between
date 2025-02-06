@@ -3,10 +3,10 @@
 * [Simple Express server](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#nodejs-express-random-between-app)<br>
   - [Random number App](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#nodejs-express-random-between-app)<br>
 * [Project initialization](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#initialize-and-install-dependencies)<br>
+* [Package.json](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#packagejson)<br>
 * [Server code](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#serverjs)<br>
   - [explanation](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#setting-up-a-route)<br>
 * [Export function](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#randomjs)<br>
-* [Package.json](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#packagejson)<br>
 * [Web server NginX - server block file](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#web-server-nginx-reverse-proxy)<br>
 * [Run your app](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#run-the-server-app-good-for-dev-phase---permanent-run-use-pm2)<br>
 * [Animated Gif](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#animated-gif)<br>
