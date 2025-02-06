@@ -178,7 +178,7 @@ They also provide features like automatic restarts, logging, and monitoring.<br>
 
 ## Updated code
 This modification makes the server respond with an HTML page instead of plain text.<br>
-The random number is displayed inside an **\<h1\>** tag along with the descriptive text "Random number between 1 and n (inclusive):".<br>
+The random number is displayed inside an **\<h1\>** tag along with the descriptive text **"Random number between 1 and n (inclusive):"**.<br>
 This way, when users visit the URL, they see a nicely formatted webpage with the random number displayed prominently.<br>
 
 ```javascript
