@@ -119,7 +119,7 @@ server {
     return 404; # managed by Certbot
 }
 ```
-## Run the server App
+## Run the server App (good for dev phase - permanent run use PM2)
 Finally, run the node server with the following command:<br>
 ```javascript
 node server.js
