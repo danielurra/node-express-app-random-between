@@ -13,7 +13,7 @@
 * [PM2](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#using-a-process-manager-recommended-for-development-and-production)<br>
 * [Enhanced version](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#updated-code)<br>
 * [Explanation of the changes](https://github.com/danielurra/node-express-app-random-between/blob/main/README.md#explanation-of-changes)<br>
-# Set up a simple Express server that listens on port 3044.
+# Set up a simple Express server that listens on port 3044
 ## Node.js, express, random-between App
 Node, express app, random number between 0 and your input, a number specifed in the route.<br> 
 For example, http://localhost:3044/10 should return a random number between 1 and 10.<br>
