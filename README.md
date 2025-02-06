@@ -150,7 +150,7 @@ They also provide features like automatic restarts, logging, and monitoring.<br>
 * Save the current PM2 process list :<br>
   This ensures that PM2 restores your app on reboot:
   ```bash
-  npm install -g pm2
+  pm2 save
   ```
 * Monitor your app :<br>
   You can monitor your app's status with:
