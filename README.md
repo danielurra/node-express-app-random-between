@@ -175,6 +175,21 @@ They also provide features like automatic restarts, logging, and monitoring.<br>
   ```bash
   pm2 logs
   ```
+* Restart a Specific Application :<br>
+  If you want to restart a specific application managed by PM2, use the pm2 restart command followed by the application name or ID.:
+  ```bash
+  pm2 restart <app_name_or_id>
+  ```
+* Use the App ID number :<br>
+  if you know the application's ID (you can find it using `pm2 list`), you can restart it by ID:
+  ```bash
+  pm2 restart 0
+  ```
+* Restart All Applications :<br>
+  If you have multiple applications running under PM2 and want to restart all of them at once, use:
+  ```bash
+  pm2 restart all
+  ```
 
 ## Updated code
 This modification makes the server respond with an HTML page instead of plain text.<br>
