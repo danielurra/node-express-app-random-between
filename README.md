@@ -134,7 +134,7 @@ Process managers like PM2 or Forever are widely used to keep Node.js application
 They also provide features like automatic restarts, logging, and monitoring.<br>
 ### Using PM2
 `PM2` is one of the most popular process managers for Node.js applications.<br>
-* Install PM2 globally :
+* Use the Node Packet Manager `npm` to install PM2 globally :
   ```bash
   npm install -g pm2
   ```
@@ -152,15 +152,16 @@ They also provide features like automatic restarts, logging, and monitoring.<br>
   ```bash
   npm install -g pm2
   ```
-* Install PM2 globally :
+* Monitor your app :<br>
+  You can monitor your app's status with:
   ```bash
-  npm install -g pm2
+  pm2 list  
   ```
-* Install PM2 globally :
+* View logs :<br>
+  PM2 stores logs for your app, which you can view with:
   ```bash
-  npm install -g pm2
+  pm2 logs
   ```
-
 
 ## Updated code
 This modification makes the server respond with an HTML page instead of plain text.<br>
