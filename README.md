@@ -215,7 +215,7 @@ app.listen(3044, () => {
 ## Explanation of Changes
 * **HTML Response**:
 Instead of sending just the random number as plain text, we now send a full HTML document.<br>
-The HTML document contains an **\<h1\>** element that displays the text **"Random number between 1 and n (inclusive):"** followed by the generated random number.<br>
+The HTML document contains an **\<h1\>** element that displays the text **Random number between 1 and n (inclusive)** followed by the generated random number.<br>
 * **Template Literals**:
 We use template literals (enclosed in backticks \`) to construct the HTML string. This allows us to embed variables like `${number}` and `${randomNumber}` directly into the string.<br>
 * **HTML Structure**:
