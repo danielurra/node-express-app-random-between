@@ -129,6 +129,15 @@ node server.js
 ## Animated GIF
 ![node-express-app-random-num](https://github.com/danielurra/node-express-app-random-between/assets/51704179/b77d713e-cc84-4579-8b90-e525ac0d48c4)<br>
 
+## Using a Process Manager (Recommended for Development and Production)
+Process managers like PM2 or Forever are widely used to keep Node.js applications running in the background.<br>
+They also provide features like automatic restarts, logging, and monitoring.<br>
+### Using PM2
+`PM2` is one of the most popular process managers for Node.js applications.<br>
+* Install PM2 globally :
+  ```bash
+  npm install -g pm2
+  ```
 ## Updated code
 This modification makes the server respond with an HTML page instead of plain text.<br>
 The random number is displayed inside an **\<h1\>** tag along with the descriptive text "Random number between 1 and n (inclusive):".<br>
