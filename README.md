@@ -142,10 +142,15 @@ They also provide features like automatic restarts, logging, and monitoring.<br>
   ```bash
   pm2 start server.js
   ```
-* Keep PM2 running on reboot :
+* Keep PM2 running on reboot :<br>
   To ensure your app starts automatically when the server reboots, run:
   ```bash
   pm2 startup
+  ```
+* Save the current PM2 process list :<br>
+  This ensures that PM2 restores your app on reboot:
+  ```bash
+  npm install -g pm2
   ```
 * Install PM2 globally :
   ```bash
