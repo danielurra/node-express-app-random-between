@@ -185,6 +185,8 @@ They also provide features like automatic restarts, logging, and monitoring.<br>
   ```bash
   pm2 restart 0
   ```
+  ![2025-02-06_12-53-47](https://github.com/user-attachments/assets/fb05ddd9-ecaf-4f9e-b3cc-8be1ab8b4b0d)<br>
+
 * Restart All Applications :<br>
   If you have multiple applications running under PM2 and want to restart all of them at once, use:
   ```bash
