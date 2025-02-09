@@ -99,7 +99,7 @@ server {
         }
 # The try_files directive takes a list of files and a location as the last argument.
 # the @ modifier, defines a named location block
-# try_files directive’s last option is an internal redirect to the specified location in this case to Node.js reverse proxy
+# the last option of the directive try_files is an internal redirect to the specified location in this case to Node.js reverse proxy
 
 location @nodejs { 
  proxy_pass http://localhost:3044;
